@@ -1,5 +1,5 @@
 const express = require('express')
-const actions = require('../methods/actions')
+const actions = require('../methods/auth')
 const router = express.Router()
 
 router.get('/', (req, res) => {
