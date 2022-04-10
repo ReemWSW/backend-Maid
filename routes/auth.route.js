@@ -8,11 +8,11 @@ router.get('/', (req, res) => {
 
 //@desc Adding new user
 //@route POST /adduser
-router.post('/adduser', actions.addNew)
+router.post('/registration', actions.registration)
 
 //@desc Authenticate a user
 //@route POST /authenticate
-router.post('/authenticate', actions.authenticate)
+router.post('/session', actions.authenticate)
 
 //@desc Get info on a user
 //@route GET /getinfo

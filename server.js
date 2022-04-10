@@ -5,7 +5,7 @@ const connectDB = require('./config/db')
 const passport = require('passport')
 const bodyParser = require('body-parser')
 const routes = require('./routes/auth.route')
-const dataImage = require('./routes/data.rpute')
+const dataImage = require('./routes/data.route')
 
 connectDB()
 

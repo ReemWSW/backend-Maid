@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
 //@desc Get image ui
 //@route GET /image
 router.get('/image', actions.getImage)
-router.post('/image', actions.creatImage)
 
 
 module.exports = router
