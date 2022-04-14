@@ -18,13 +18,6 @@ var functions = {
           name: req.body.name,
           password: req.body.password,
           phone: req.body.phone,
-          // dob: new Date(req.body.dob),
-          // address: [
-          //   {
-          //     lat: req.body.lat,
-          //     long: req.body.long,
-          //   },
-          // ],
         })
 
         newUser.save(function (err, newUser) {
