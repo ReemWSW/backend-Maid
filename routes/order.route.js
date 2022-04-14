@@ -6,12 +6,8 @@ orderRouter.get('/', (req, res) => {
     res.send('order_method')
 })
 
-// //@desc Adding new user
-// //@route POST /adduser
+// //@desc Adding new order
+// //@route POST /setorder
 orderRouter.post('/setorder', actions.sendOrder)
-
-// //@desc Get info on a user
-// //@route GET /getinfo
-// orderRouter.get('/getinfo', actions.getinfo)
 
 module.exports = orderRouter

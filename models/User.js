@@ -2,22 +2,12 @@ var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 var bcrypt = require('bcrypt')
 var userSchema = new Schema({
-  email: {
-    type: String,
-    require: true,
-  },
-  name: {
-    type: String,
-    require: true,
-  },
-  password: {
-    type: String,
-    require: true,
-  },
-  phone: {
-    type: String,
-    require: true,
-  },
+  image: String,
+  email: String,
+  name: String,
+  password: String,
+  phone: String,
+  maid: { type: Boolean, default: false },
 })
 
 userSchema.pre('save', function (next) {
