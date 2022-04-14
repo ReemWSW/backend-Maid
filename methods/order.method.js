@@ -15,6 +15,7 @@ var functions = {
         type: req.body.type,
         detail: req.body.detail,
         datetime: req.body.datetime,
+        status: req.body.status,
       })
       newOrder.save(function (err, newUser) {
         if (err) {
