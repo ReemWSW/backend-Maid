@@ -64,6 +64,7 @@ var functions = {
                   email: user.email,
                   phone: user.phone,
                   token: token,
+                  maid: user.maid,
                 },
               })
             } else {
