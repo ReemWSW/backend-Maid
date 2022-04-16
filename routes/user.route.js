@@ -9,6 +9,7 @@ userRouter.get('/', (req, res) => {
 // //@desc set new maid
 // //@route POST /setmaid
 userRouter.post('/setmaid', actions.setMaid)
+userRouter.post('/getuser', actions.getUser)
 
 
 module.exports = userRouter

@@ -16,12 +16,35 @@ var functions = {
           res.status(200).json({
             success: true,
             message: 'อัพเดทสำเร็จแล้ว',
-            data: user.maid,
+            data: user,
           })
         }
       })
     }
   },
+
+  getUser: function (req, res) {
+    if (!req.body) {
+      res.json({ success: false, message: 'เกิดข้อผิดพลาด' })
+    } else {
+      var name = req.body.name
+      User.find({ name: name }, function (
+        err,
+        user,
+      ) {
+        if (err) {
+          res.status(404).json({ success: false, message: 'เกิดข้อผิดพลาด' })
+        } else {
+          res.status(200).json({
+            success: true,
+            message: 'อัพเดทสำเร็จแล้ว',
+            data: user,
+          })
+        }
+      })
+    }
+  },
+
 }
 
 module.exports = functions
